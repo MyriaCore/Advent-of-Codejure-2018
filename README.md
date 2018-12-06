@@ -1,14 +1,19 @@
-# advent-of-clojure-2018
+# Advent of Codejure
+In the beginning of time, there was a word, 
+and the word was 'clojure'. Then, out of the darkness, 
+came another word, 'code'. Soon, the clojure and the 
+code collided to form a new word - _codejure_.
 
-A Clojure library designed to ... well, that part is up to you.
+Needless to say, I'm really bad at making clojure puns. 
+Join me while I learn clojure and celebrate the holidays 
+at the same time!
 
-## Usage
+## Progress
+| Puzzle | Date Completed |
+| --- | --- |
+| None yet lol | F |
 
-FIXME
 
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+## Resources
+- [Advent of Code](https://adventofcode.com/)
+- [Clojure Cheatsheet](https://clojure.org/api/cheatsheet)
