@@ -9,9 +9,9 @@ Join me while I learn clojure and celebrate the holidays
 at the same time!
 
 ## Progress
-| Puzzle | Date Completed |
+| Puzzle | Date-Time Completed |
 | --- | --- |
-| None yet lol | F |
+| Day1 Part1 | 6:44 PM 12/5 |
 
 
 ## Resources
