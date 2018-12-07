@@ -11,11 +11,12 @@ at the same time!
 ## Progress
 | Puzzle | Date-Time Completed |
 | --- | --- |
-| Day1 Part1 | 6:44 PM 12/5 |
-| Day1 Part2 | To be Completed |
-| Day2 Part1 | To be Completed |
-
+| Day1 Part1 | 6:44 PM, 12/5 |
+| Day1 Part2 | WIP |
+| Day2 Part1 | 11:12 AM, 12/7 |
+| Day 2 Part 2 | WIP |
 
 ## Resources
-- [Advent of Code](https://adventofcode.com/)
+- [Advent of Code 2018](https://adventofcode.com/2018/)
 - [Clojure Cheatsheet](https://clojure.org/api/cheatsheet)
+- [Advent of Code 2018 Questions](./doc/questions.md) (documented by yours truly)
