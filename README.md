@@ -12,6 +12,8 @@ at the same time!
 | Puzzle | Date-Time Completed |
 | --- | --- |
 | Day1 Part1 | 6:44 PM 12/5 |
+| Day1 Part2 | To be Completed |
+| Day2 Part1 | To be Completed |
 
 
 ## Resources
