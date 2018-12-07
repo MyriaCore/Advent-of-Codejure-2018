@@ -11,11 +11,18 @@
 
 (defn repeated-frequency
 	"Solves the repeated frequency puzzle"
+	;; TODO: This function keeps printing out nil b/c the input is prob mangled to omuch somewhere.
 	[input]
 	(let [results (reductions + input)]
 		(loop [seen #{}
 					 acc results]
+			(if-not (first acc)
+				(println (count seen))
 			(if (contains? seen (first acc))
-				(first acc)
-				(recur (conj seen (first acc))
-								(rest acc))))))
+				(do
+					(println (count seen))
+					(first acc))
+				(do
+					;(println seen)
+					(recur (conj seen (first acc))
+								(rest acc))))))))
