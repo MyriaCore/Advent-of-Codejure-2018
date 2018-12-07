@@ -16,7 +16,14 @@
 													(filter #(or (contains? % 2) (contains? % 3)) ,,,))]
 		(* (count (filter #(contains? % 2) two-or-three)) (count (filter #(contains? % 3) two-or-three)))))
 
-(defn part-two
+(defn part-two ;; ,(part-two puzzle-input) => ["lnfqdscwjyteorambzuchzrgpx" "lnfqdscwjyteorambzuchirgpx"] => "lnfqdscwjyteorambzuchrgpx"
 	[input]
-	"TODO: Documentation"
-	(map #(levenshtein % ,,,) input))
+	"Takes the input (list of strings), and creates a list of string pairs by matching each string
+	with the other string in the list that produces the lowest levenshtein edit distance. Then, returns the pair
+	that gives the lowest possible edit distance of all pairs in the list. TODO: continue documentation"
+	(let [pairs (for [str input
+										:let [partner (apply min-key
+																				 (partial levenshtein str,,,)
+																				 (filter #(not (= str %)) input))]]
+								[str partner])]
+		(apply min-key (partial apply levenshtein) pairs))) ;; min-key works b/c 1 is the lowest it should be, it should be 0.
