@@ -20,5 +20,6 @@
 	"Solves the repeated frequency puzzle"
 	[input]
 	(let [results (resulting-frequencies input)]
-		(loop [current (get results 0)]
-			,,,))) ;; TODO: finish this
+		(doseq [n (range (count results))]
+			(if-let [i (frequencies (take n results))]
+			i)))) ;; TODO: figure out why this keeps returning nil
