@@ -15,6 +15,7 @@ at the same time!
 | Day1 Part2 | WIP |
 | Day2 Part1 | 11:12 AM, 12/7 |
 | Day 2 Part 2 | 3:30 PM, 12/7 |
+| Day3 Part1 | WIP |
 
 ## Resources
 - [Advent of Code 2018](https://adventofcode.com/2018/)

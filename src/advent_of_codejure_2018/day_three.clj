@@ -49,9 +49,12 @@
 	(comment TODO))
 
 (defn part-one
-	"TODO: Documentation"
+	"Solves part one by turning the input (vector of strings) into a list of maps with usable info,
+	then reducing those maps into a single 2D array (vector of vectors) representing the canvas, then filtering
+	that 2D array for elements that have at least 2 claimants, then counting the resulting array, and returning that
+	number."
 	[input]
-	(->> input
+	(->> input ;; TODO: test  me!
 			 (mapv parse-claim-string ,,,) ;; Turns all of the strings into maps
 			 (render-claims [1000 1000] ,,,) ;; Turns all of the maps into a 2D array of claim id's
 			 (filter #(>= (count %) 2) ,,,) ;; Filters the 2D array for all elements with overlaps
