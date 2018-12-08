@@ -1,8 +1,19 @@
 # Advent of Code 2018 Questions
 Listed here, I'm going to document the actual problems found in the [2018 Advent of Code](https://adventofcode.com/2018/).
 
+## Contents
+- [Day 1](#Day-1:-Chronal-Calibration)
+	- [Part 1](#Day-1:-Part-1)
+	- [Part 2](#Day-1:-Part-2)
+- [Day 2](#Day-2:-Inventory-Management-System)
+	- [Part 1](#Day-2:-Part-1)
+	- [Part 2](#Day-2:-Part-2)
+- [Day 3](#Day-3:-No-Matter-How-You-Slice-It)
+	- [Part 1](#Day-3:-Part-1)
+	- [Part 2](#Day-3:-Part-2)
+
 ## Day 1: Chronal Calibration
-### Part 1
+### Day 1: Part 1
 "We've detected some temporal anomalies," one of Santa's Elves at the Temporal Anomaly Research and Detection Instrument Station tells you. She sounded pretty worried when she called you down here. "At 500-year intervals into the past, someone has been changing Santa's history!"
 
 "The good news is that the changes won't propagate to our time stream for another 25 days, and we have a device" - she attaches something to your wrist - "that will let you fix the changes with no such propagation delay. It's configured to send you 500 years further into the past every few days; that was the best we could do on such short notice."
@@ -28,7 +39,7 @@ Here are other example situations:
 `-1, -2, -3` results in -`6`
 Starting with a frequency of zero, **what is the resulting frequency** after all of the changes in frequency have been applied?
 
-### Part 2
+### Day 1: Part 2
 You notice that the device repeats the same frequency change list over and over. To calibrate the device, you need to find the first frequency it reaches **twice**.
 
 For example, using the same list of changes above, the device would loop as follows:
@@ -52,7 +63,7 @@ Here are other examples:
 **What is the first frequency your device reaches twice?**
 
 ## Day 2: Inventory Management System
-### Part 1
+### Day 2: Part 1
 You stop falling through time, catch your breath, and check the screen on the device. "Destination reached. Current Year: 1518. Current Location: North Pole Utility Closet 83N10." You made it! Now, to find those anomalies.
 
 Outside the utility closet, you hear footsteps and a voice. "...I'm not sure either. But now that so many people have chimneys, maybe he could sneak in that way?" Another voice responds, "Actually, we've been working on a new kind of suit that would let him fit through tight spaces like that. But, I heard that a few days ago, they lost the prototype fabric, the design plans, everything! Nobody on the team can even seem to remember important details of the project!"
@@ -75,7 +86,7 @@ For example, if you see the following box IDs:
 
 **What is the checksum** for your list of box IDs?
 
-### Part 2
+### Day 2: Part 2
 Confident that your list of box IDs is complete, you're ready to find the boxes full of prototype fabric.
 
 The boxes will have IDs which differ by exactly one character at the same position in both strings. For example, given the following box IDs:
@@ -92,7 +103,7 @@ The IDs `abcde` and `axcye` are close, but they differ by two characters (the se
 **What letters are common between the two correct box IDs?** (In the example above, this is found by removing the differing character from either ID, producing `fgij`.)
 
 ## Day 3: No Matter How You Slice It
-### Part 1
+### Day 3: Part 1
 The Elves managed to locate the chimney-squeeze prototype fabric for Santa's suit (thanks to someone who helpfully wrote its box IDs on the wall of the warehouse in the middle of the night). Unfortunately, anomalies are still affecting them - nobody can even agree on how to **cut** the fabric.
 
 The whole piece of fabric they're working on is a very large square - at least `1000` inches on each side.
