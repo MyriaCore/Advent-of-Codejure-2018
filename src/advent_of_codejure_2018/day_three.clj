@@ -46,7 +46,8 @@
 	sections of the canvas in the elements of the 2D array. Each element of the 2D array represents 1 square
 	inch of material."
 	[[length height] & claims]
-	(comment TODO))
+	(let [canvas (into (vector) (repeat height (into (vector) (repeat length))))]
+		(comment TODO: add claims to canvas)))
 
 (defn part-one
 	"Solves part one by turning the input (vector of strings) into a list of maps with usable info,
