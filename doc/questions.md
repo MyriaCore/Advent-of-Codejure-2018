@@ -2,15 +2,15 @@
 Listed here, I'm going to document the actual problems found in the [2018 Advent of Code](https://adventofcode.com/2018/).
 
 ## Contents
-- [Day 1](#Day-1:-Chronal-Calibration)
-	- [Part 1](#Day-1:-Part-1)
-	- [Part 2](#Day-1:-Part-2)
-- [Day 2](#Day-2:-Inventory-Management-System)
-	- [Part 1](#Day-2:-Part-1)
-	- [Part 2](#Day-2:-Part-2)
-- [Day 3](#Day-3:-No-Matter-How-You-Slice-It)
-	- [Part 1](#Day-3:-Part-1)
-	- [Part 2](#Day-3:-Part-2)
+- [Day 1](#day-1-chronal-calibration)
+	- [Part 1](#day-1-part-1)
+	- [Part 2](#day-1-part-2)
+- [Day 2](#day-2-inventory-management-system)
+	- [Part 1](#day-2-part-1)
+	- [Part 2](#day-2-part-2)
+- [Day 3](#day-3-no-matter-how-you-slice-it)
+	- [Part 1](#day-3-part-1)
+	- [Part 2](#day-3-part-2)
 
 ## Day 1: Chronal Calibration
 ### Day 1: Part 1
