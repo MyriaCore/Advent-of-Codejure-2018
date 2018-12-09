@@ -5,4 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
 								 [org.clojure/core.match "0.3.0-alpha5"]
-								 [clj-fuzzy "0.4.1"]])
+								 [clj-fuzzy "0.4.1"]
+								 [net.mikera/core.matrix "0.62.0"]])
