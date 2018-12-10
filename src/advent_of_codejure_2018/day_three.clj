@@ -54,13 +54,12 @@
 	(some #(= elm %) coll))
 
 (defn render-claim
-	;; TODO: debug this. The fcn never edits the canvas
 	"from a canvas, renders a single claim"
 	[canvas claim]
 	(let [x-range (range (first (:position claim)) (+ (first (:position claim)) (first (:size claim))))
 				y-range (range (second (:position claim)) (+ (second (:position claim)) (second (:size claim))))]
-		(r/map (fn [can]
-					 (println [(in? x-range (:x can)) (in? y-range (:y can))])
+		(println "Rendering claim #" (:id claim))
+		(map (fn [can]
 					 (if (and (in? x-range (:x can)) (in? y-range (:y can)))
 						 (update can :claimed-by #(conj % (:id claim)))
 						 can))
@@ -74,7 +73,7 @@
 	sections of the canvas in the elements of the 2D array. Each element of the 2D array represents 1 square
 	inch of material."
 	[canvas [& claims]]
-	(r/reduce render-claim canvas claims))
+	(reduce render-claim canvas claims))
 
 (defn part-one
 	"Solves part one by turning the input (vector of strings) into a list of maps with usable info,
@@ -85,11 +84,18 @@
 	(->> input ;; TODO: test  me!
 			 (mapv parse-claim-string ,,,) ;; Turns all of the strings into maps
 			 (render-claims (new-canvas 1000 1000) ,,,) ;; Turns all of the maps into a 2D array of claim id's
-			 (r/filter #(>= (count (:claimed-by %)) 2) ,,,) ;; Filters the 2D array for all elements with overlaps
-			 (into (vector) ,,,)
+			 (filter #(>= (count (:claimed-by %)) 2) ,,,) ;; Filters the 2D array for all elements with overlaps
+			 ;(into (vector) ,,,)
 			 (count ,,,))) ;; Counts those elements and returns result
 
 (defn part-two
 	"TODO: Documentation"
 	[input]
 	(comment TODO))
+
+(defn -main
+	[]
+	(let [a (part-one puzzle-input)]
+		(println a)))
+
+(-main)
