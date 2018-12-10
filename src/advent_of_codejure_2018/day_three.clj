@@ -75,7 +75,7 @@
 	[canvas [& claims]]
 	(reduce render-claim canvas claims))
 
-(defn part-one
+(defn part-one ;; => 121163
 	"Solves part one by turning the input (vector of strings) into a list of maps with usable info,
 	then reducing those maps into a single 2D array (vector of vectors) representing the canvas, then filtering
 	that 2D array for elements that have at least 2 claimants, then counting the resulting array, and returning that
@@ -92,10 +92,3 @@
 	"TODO: Documentation"
 	[input]
 	(comment TODO))
-
-(defn -main
-	[]
-	(let [a (part-one puzzle-input)]
-		(println a)))
-
-(-main)
