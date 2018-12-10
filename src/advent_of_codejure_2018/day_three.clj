@@ -65,12 +65,12 @@
 	 "Checks a partial-canvas to ensure that the claim given by `claim` is completely represented in the canvas, and
 	 that there are no cells missing that the claim would otherwise be in."
 	[partial-canvas claim]
+	(println "Validating Claim #" (:id claim))
 	(let [x-range (range (first (:position claim)) (+ (first (:position claim)) (first (:size claim)))),
 				y-range (range (second (:position claim)) (+ (second (:position claim)) (second (:size claim)))),
 				filtered-canvas (filter #(and (in? x-range (:x %)) (in? y-range (:y %))) partial-canvas)
 				canvas-x-coords (map #(:x %) filtered-canvas)
 				canvas-y-coords (map #(:y %) filtered-canvas)]
-		(println "Validating Claim #" (:id claim))
 		(and
 			;; is each x that should be there present?
 			(reduce #(and (in? canvas-x-coords %2) %1) true x-range)
@@ -110,4 +110,4 @@
 														(filter #(= (count (:claimed-by %)) 1) ,,,))]
 		(filter #(claim-valid? prepped-canvas %) claims)))
 
-(part-two puzzle-input)
+(println (first (part-two puzzle-input)))
