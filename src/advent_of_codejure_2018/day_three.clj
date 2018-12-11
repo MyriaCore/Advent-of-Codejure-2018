@@ -95,7 +95,8 @@
 			 ;; Counts the number of square inch regions regions still remaining and returns the result
 			 (count ,,,)))
 
-(defn part-two ;; ,(part-two puzzle-input) =>
+(defn part-two ;; ,(part-two puzzle-input) => {:id 1, :position [185 501], :size [17 15]}
+	;; TODO: Fix later, answer is wrong
 	"Solves part two by parsing the input (vector of strings) into a vector of maps describing claims, then reducing those maps
 	into a list of maps describing the material of santa's suit as a 2D array, each map describing square inch element in that array,
 	and what claims have claimed that square inch. The vector of maps is then filtered for the number of cells that have exactly
